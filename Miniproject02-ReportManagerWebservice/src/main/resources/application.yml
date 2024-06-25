@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: Miniproject02-ReportManagerWebservice
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/miniproject02rmw
+    username: root
+    password: Admin@123
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    defer-datasource-initialization: true
+    
+    
+  sql:
+    init:
+      mode: never
+      
+  
+    
+server:
+  port: 4000
